@@ -27,7 +27,11 @@ Create a new HTML file called `step-1.html`. This file will not require any PHP 
 
 ## Step 2: Check Login Credentials
 
-Create a new file called `step-2.php`. Add the standard HTML tags. Above the `doctype` tag add some PHP to check the email and password:
+Create a new file called `step-2.php`. 
+
+Notice that the action in `step-1.html` is set to `step-2.php`. This page will be loaded when the HTML form in the first has been submitted. When a PHP file receives form data it is available by referenceing a special PHP array called `$_POST` or `$_GET`.
+
+Open your new file and add the standard HTML tags. Above the `doctype` tag add the following PHP whcih will check to see if the provided email and password is correct:
 
 ```php
 <?php
@@ -45,7 +49,15 @@ if( $_POST['email'] == 'jane.doe@email.com' and $_POST['password'] == 'password'
 ?>
 ```
 
-In the `body` add one message for a successful login and a second message for an error:
+If the email address and password are correct, this code will save the member's email address and a logged in status of `true` to a session.
+
+> Note: A session allows a server side langauge to temporarily store data about a website visitor. It's similar to a cookie except the data resides on the sever and cookie data resides on the client computer. 
+
+To use a session in PHP our code simply needs to initiate a session by executing the `session_start()` function. After the session has been initialized, session data can be created or referenced by using the `$_SESSION` array. 
+
+> [More information on using PHP sessions](https://www.php.net/manual/en/function.session-start.php)
+
+In the `body` add a message for a successful login and a second message for an error:
 
 ```php
 <?php if( isset( $_SESSION['login'] ) ): ?>
@@ -63,4 +75,54 @@ In the `body` add one message for a successful login and a second message for an
 <?php endif; ?>
 ```
 
+> Hint: If you are testing this file make sure you upload both files to your server and start by loading `step-1.html`. The second file will not work properly without receiving the form data from the first file. 
 
+## Step 3: Display Member Information
+
+Create a new file called `step-3.php`. This file will display the logged in member's email address by referencing the data in the session. Add the standard HTML tags and add this PHP in the `body`:
+
+```php
+<p>You are logged in as <?php echo $_SESSION['email']; ?>.</p>
+<a href="step-4.php">Logout</a>
+```
+
+## Step 4: Logout
+
+Create a new file named `step-4.php`. This file will simply use the `session_destroy()` function to remove all session data. 
+
+Above the `doctype` tag add the following PHP code:
+
+```php
+<?php
+
+session_start();
+session_destroy();
+
+?>
+```
+
+Within the `body` tag add a message informing visitors they have been logged out and a link back to `step-1.html`:
+
+```html
+<p>You have been logged out!</p>
+<a href="step-1.html">Start Again</a>
+```
+
+Upload all four files to your server and test by loading `step-1.html`. 
+
+## Cookies
+
+For a challenge, adjust the four files above to use cookies instead of sessions. All of the code can remain the same except the code that creates or references session data. 
+
+> [More information on using PHP cookies](https://www.php.net/manual/en/function.setcookie.php)
+
+## Tutorial Requirements:
+
+* [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
+* [Filezilla](https://filezilla-project.org/) (or any FTP program)
+
+Full tutorial URL: https://codeadam.ca/learning/php/php-forms-session-cookies.html
+
+<a href="https://codeadam.ca">
+<img src="https://codeadam.ca/images/code-block.png" width="100">
+</a>
