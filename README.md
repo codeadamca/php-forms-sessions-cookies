@@ -121,7 +121,7 @@ For a challenge, adjust the four files above to use cookies instead of sessions.
 * [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
 * [Filezilla](https://filezilla-project.org/) (or any FTP program)
 
-Full tutorial URL: https://codeadam.ca/learning/php/php-forms-session-cookies.html
+Full tutorial URL: https://codeadam.ca/learning/php-forms-session-cookies.html
 
 <a href="https://codeadam.ca">
 <img src="https://codeadam.ca/images/code-block.png" width="100">
