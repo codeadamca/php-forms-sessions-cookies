@@ -79,7 +79,17 @@ In the `body` add a message for a successful login and a second message for an e
 
 ## Step 3: Display Member Information
 
-Create a new file called `step-3.php`. This file will display the logged in member's email address by referencing the data in the session. Add the standard HTML tags and add this PHP in the `body`:
+Create a new file called `step-3.php`. Open your new file and add the standard HTML tags. Above the `doctype` tage add the following code:
+
+```php
+<?php
+
+session_start();
+
+?>
+```
+
+This file will display the logged in member's email address by referencing the data in the session. Add the standard HTML tags and add this PHP in the `body`:
 
 ```php
 <p>You are logged in as <?php echo $_SESSION['email']; ?>.</p>
