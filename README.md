@@ -1,4 +1,4 @@
-# php-forms-sessions-cookies
+# Using Forms, Sessions, and Cookies with PHP
 
 A basic example using PHP to create a basic login form. 
 
