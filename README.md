@@ -126,7 +126,9 @@ For a challenge, adjust the four files above to use cookies instead of sessions.
 
 > [More information on using PHP cookies](https://www.php.net/manual/en/function.setcookie.php)
 
-## Tutorial Requirements:
+***
+
+## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
 * [Filezilla](https://filezilla-project.org/) (or any FTP program)
