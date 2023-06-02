@@ -130,8 +130,9 @@ For a challenge, adjust the four files above to use cookies instead of sessions.
 
 ## Repo Resources
 
-* [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
-* [Filezilla](https://filezilla-project.org/) (or any FTP program)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Filezilla](https://filezilla-project.org/)
+* [PHP](https://php.net)
 
 > Full tutorial URL:  
 > https://codeadam.ca/learning/php-forms-session-cookies.html
