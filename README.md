@@ -126,6 +126,9 @@ For a challenge, adjust the four files above to use cookies instead of sessions.
 
 > [More information on using PHP cookies](https://www.php.net/manual/en/function.setcookie.php)
 
+> Full tutorial URL:  
+> https://codeadam.ca/learning/php-forms-session-cookies.html
+
 ***
 
 ## Repo Resources
@@ -133,9 +136,6 @@ For a challenge, adjust the four files above to use cookies instead of sessions.
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Filezilla](https://filezilla-project.org/)
 * [PHP](https://php.net)
-
-> Full tutorial URL:  
-> https://codeadam.ca/learning/php-forms-session-cookies.html
 
 <a href="https://codeadam.ca">
 <img src="https://codeadam.ca/images/code-block.png" width="100">
