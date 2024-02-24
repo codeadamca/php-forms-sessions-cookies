@@ -51,7 +51,8 @@ if( $_POST['email'] == 'jane.doe@email.com' and $_POST['password'] == 'password'
 
 If the email address and password are correct, this code will save the member's email address and a logged in status of `true` to a session.
 
-> Note: A session allows a server side langauge to temporarily store data about a website visitor. It's similar to a cookie except the data resides on the sever and cookie data resides on the client computer. 
+> [!Note]
+> A session allows a server side langauge to temporarily store data about a website visitor. It's similar to a cookie except the data resides on the sever and cookie data resides on the client computer. 
 
 To use a session in PHP our code simply needs to initiate a session by executing the `session_start()` function. After the session has been initialized, session data can be created or referenced by using the `$_SESSION` array. 
 
@@ -75,7 +76,8 @@ In the `body` add a message for a successful login and a second message for an e
 <?php endif; ?>
 ```
 
-> Hint: If you are testing this file make sure you upload both files to your server and start by loading `step-1.html`. The second file will not work properly without receiving the form data from the first file. 
+> [!Note]
+> If you are testing this file make sure you upload both files to your server and start by loading `step-1.html`. The second file will not work properly without receiving the form data from the first file. 
 
 ## Step 3: Display Member Information
 
